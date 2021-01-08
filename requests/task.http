@@ -1,0 +1,33 @@
+###
+GET http://localhost:3000/api/tasks
+
+###
+GET http://localhost:3000/api/tasks?size=5&page=2
+
+###
+POST  http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Make app Docker",
+    "description": "Work freelance Docker",
+    "done": true
+}
+
+###
+GET http://localhost:3000/api/tasks/5ff76529892692f6fc89dd48
+
+###
+DELETE http://localhost:3000/api/tasks/5ff7616187959de7cdded2b4
+
+###
+GET http://localhost:3000/api/tasks/done
+
+###
+PUT http://localhost:3000/api/tasks/5ff76529892692f6fc89dd48
+Content-Type: application/json
+
+{
+    "title": "Make app Flutter",
+    "description": "Work freelance Flutter"
+}
