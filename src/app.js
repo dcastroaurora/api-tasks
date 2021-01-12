@@ -10,7 +10,7 @@ app.set("port", process.env.PORT || 8080);
 
 //middlewares
 app.use(cors());
-app.use(morgan("dev")); //para que nos aparezca la peticion en el terminal
+app.use(morgan("dev")); //para que nos aparezca la peticion en el terminal....
 app.use(express.json()); // para poder entender req.body de objetos json
 app.use(express.urlencoded({ extended: false })); // para peticiones que llegan desde formulario HTML
 
