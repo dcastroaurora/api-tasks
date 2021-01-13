@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: false })); // para peticiones que llegan 
 
 //routes
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to my application in Azure" });
+  res.json({ message: "Welcome to my application with deploy in Azure" });
 });
 
 app.use("/api/tasks", TasksRoutes);
